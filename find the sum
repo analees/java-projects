@@ -1,0 +1,42 @@
+package asg1;
+
+public class Asg1Part1 {
+	public static void main (String[]args)
+	  {
+	int a = 49; //49 is the start of the range 
+    int b = 450; //450 is the end of the range
+
+  int sum = 0; //initialize the sum to be 0 at beginning of for loop
+
+  for (int i = a; i <= b; i+=9) //for loop with an incrementation of 9
+      sum = sum + i;
+  	String message  ="The sum of the numbers from 49 to 450 using an increment of 9: ";
+    System.out.println (message + sum);
+    
+    int c = 2445; //2445 is the start of the range 
+    int d = 3151; //3151 is the end of the range
+    int f = 37; //divisible by 37
+
+  int sumof = 0; //initialize the sum to be 0 at beginning of for loop
+
+	  for (int i = c; i <= d;i++) //for loop within range c and d
+		  if (i%f==0) //if the number is divisible by f(37) sum is increased 
+			  sumof += i;
+	  
+  	String newmessage  ="The sum the numbers from 2445 to 3151 that are evenly divisible by 37: ";
+    System.out.println (newmessage + sumof); //output sum
+    
+    int g = 5; //5 is the start of the range 
+    int h = 30; //30 is the end of the range
+
+  int sumofsquared = 0; //initialize the sum to be 0 at beginning of for loop
+
+	  for (int i = g; i <= h;i++) //for loop within range c and d
+			  sumofsquared += (i*i);
+	  
+  	String squaredmessage  ="The sum of the squares of all the numbers from 5 to 30: ";
+    System.out.println (squaredmessage + sumofsquared); //output sum
+    
+ }
+
+}
